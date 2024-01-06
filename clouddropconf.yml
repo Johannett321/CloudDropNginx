@@ -1,0 +1,8 @@
+paths:
+  install: /CloudDrop/install.sh
+  start: /CloudDrop/start.sh
+  stop: /CloudDrop/stop.sh
+
+parameters:
+  port: number
+  websitePath: text
