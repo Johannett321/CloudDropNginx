@@ -3,6 +3,8 @@ paths:
   start: /CloudDrop/start.sh
   stop: /CloudDrop/stop.sh
 
-parameters:
+requiredParameters:
+  Website path: text
+
+optionalParameters:
   port: number
-  websitePath: text
