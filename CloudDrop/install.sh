@@ -1,8 +1,8 @@
 # installing nginx
-sudo apt update
-sudo apt install nginx
+apt-get update
+apt-get install nginx -y
 cd /var/www
-sudo mkdir tutorial
+mkdir tutorial
 cd tutorial
 
 # creating a test site
@@ -37,3 +37,6 @@ server {
        }
 }
 EOF
+
+apt-get install systemctl -y
+systemctl start nginx
