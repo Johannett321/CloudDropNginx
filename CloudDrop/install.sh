@@ -1,6 +1,13 @@
 # installing nginx
+echo "Updating..."
 apt-get update
+echo "Update success!"
+
+echo "Installing nginx..."
 apt-get install nginx -y
+echo "Nginx installed!"
+
+echo "Creating directories and files"
 cd /var/www
 mkdir tutorial
 cd tutorial
@@ -38,5 +45,12 @@ server {
 }
 EOF
 
+echo "Directories and files created"
+
+echo "Installing systemctl..."
 apt-get install systemctl -y
+echo "Systemctl installed!"
+
+echo "Starting NGINX..."
 systemctl start nginx
+echo "Nginx started!"
