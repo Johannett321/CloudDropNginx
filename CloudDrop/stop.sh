@@ -1,1 +1,1 @@
-sudo service nginx stop
+systemctl stop nginx
