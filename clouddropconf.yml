@@ -8,4 +8,6 @@ requiredParameters:
 
 optionalParameters:
   port: number
-  
+
+ports:
+- 80
