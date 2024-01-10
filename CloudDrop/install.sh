@@ -31,8 +31,8 @@ EOF
 cd /etc/nginx/sites-enabled
 cat <<EOF > tutorial
 server {
-       listen 80;
-       listen [::]:80;
+       listen <#! Website Port !#>;
+       listen [::]:<#! Website Port !#>;
 
        server_name example.ubuntu.com;
 
