@@ -6,8 +6,5 @@ paths:
 requiredParameters:
   Website path: text
 
-optionalParameters:
-  port: number
-
 ports:
-- 80
+- Website Port
