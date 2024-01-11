@@ -31,8 +31,8 @@ EOF
 cd /etc/nginx/sites-enabled
 cat <<EOF > tutorial
 server {
-       listen <#! Website Port !#>;
-       listen [::]:<#! Website Port !#>;
+       listen 2000;
+       listen [::]:2000;
 
        root /var/www/tutorial;
        index index.html;
