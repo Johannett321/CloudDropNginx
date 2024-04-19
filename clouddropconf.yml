@@ -8,3 +8,6 @@ requiredParameters:
 
 ports:
 - Website Port
+
+availableData:
+  testInfo: https://datausa.io/api/data?drilldowns=Nation&measures=Population&year=2021
