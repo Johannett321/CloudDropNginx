@@ -10,4 +10,5 @@ ports:
 - Website Port
 
 availableData:
+  hourlyCost: http://localhost:8080/api/v1/test-data/get-hourly-cost
   testInfo: https://datausa.io/api/data?drilldowns=Nation&measures=Population&year=2021
