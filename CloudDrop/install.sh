@@ -7,34 +7,14 @@ echo "Installing nginx..."
 apt-get install nginx -y
 echo "Nginx installed!"
 
-echo "Creating directories and files"
-cd /var/www
-mkdir tutorial
-cd tutorial
-
-# creating a test site
-cat <<EOF > index.html
-<!doctype html>
-<html>
-<head>
-    <meta charset="utf-8">
-    <title>Hello, Nginx!</title>
-</head>
-<body>
-    <h1>Hello, Nginx!</h1>
-    <p>We have just configured our Nginx web server on Ubuntu Server!</p>
-</body>
-</html>
-EOF
-
 # setting up a virtual host
 cd /etc/nginx/sites-enabled
-cat <<EOF > tutorial
+cat <<EOF > default
 server {
        listen <#! Website Port !#>;
        listen [::]:<#! Website Port !#>;
 
-       root /var/www/tutorial;
+       root <#! Website path !#>;
        index index.html;
 
        location / {
